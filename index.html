@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aman Kumar Jha — Full-Stack Developer</title>
+<meta name="description" content="Aman Kumar Jha — Full-Stack Developer building RAG systems, real-time apps, and clean web experiences. NIT Silchar, Electrical Engineering." />
+<meta name="theme-color" content="#10140F" />
+<script>
+  try {
+    var t = localStorage.getItem("theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aman Kumar Jha — Full-Stack Developer" />
+<meta property="og:description" content="Portfolio of Aman Kumar Jha — full-stack developer, RAG systems & competitive programmer." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader" aria-hidden="true">
+  <span class="loader-mark">AKJ</span>
+</div>
+
+<!-- ================= PROGRESS BAR ================= -->
+<div id="scroll-progress"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner container">
+    <a href="#home" class="logo">Aman<span>.</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active" data-link>Home</a>
+      <a href="#about" class="nav-link" data-link>About</a>
+      <a href="#experience" class="nav-link" data-link>Experience</a>
+      <a href="#projects" class="nav-link" data-link>Projects</a>
+      <a href="#skills" class="nav-link" data-link>Skills</a>
+      <a href="#achievements" class="nav-link" data-link>Achievements</a>
+      <a href="#contact" class="nav-link" data-link>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <a href="https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view?usp=sharing" class="btn btn-ghost btn-sm resume-nav-btn" target="_blank" rel="noopener">Resume</a>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="circuit-grid"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal">$ whoami</p>
+        <h1 class="hero-title reveal">Aman Kumar Jha</h1>
+        <h2 class="hero-subtitle reveal">
+          <span id="typed"></span><span class="cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="hero-desc reveal">
+          B.Tech Electrical Engineering student at NIT Silchar building full-stack
+          products and Retrieval-Augmented Generation systems — currently an
+          Advanced Application Engineering Analyst Intern at Accenture. I like
+          turning complex backend problems into fast, reliable, real-world apps.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+        <div class="hero-socials reveal">
+          <a href="https://github.com/amanxsays" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/amanxsays/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:amanjhasahab07@gmail.com" aria-label="Email" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/amanxsays/" target="_blank" rel="noopener" aria-label="LeetCode" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 23.5c-.94 0-1.87-.35-2.6-1.05l-4.5-4.36a3.4 3.4 0 0 1-.98-2.39c0-.9.35-1.75.98-2.39l4.5-4.36a3.6 3.6 0 0 1 2.6-1.05c.98 0 1.9.38 2.6 1.06l2.35 2.28a1.15 1.15 0 0 1-1.6 1.65l-2.35-2.28a1.3 1.3 0 0 0-.9-.37c-.35 0-.68.13-.93.37L8.15 15.02a1.1 1.1 0 0 0-.34.83c0 .32.12.6.34.83l4.5 4.36c.25.24.58.37.93.37.34 0 .66-.13.9-.37l2.35-2.29a1.15 1.15 0 0 1 1.6 1.66l-2.35 2.27c-.7.68-1.62 1.05-2.6 1.05Zm7.87-6.37H12.9a1.15 1.15 0 1 1 0-2.3h8.45a1.15 1.15 0 1 1 0 2.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="hero-photo-frame">
+          <span class="corner corner-tl" aria-hidden="true"></span>
+          <span class="corner corner-tr" aria-hidden="true"></span>
+          <span class="corner corner-bl" aria-hidden="true"></span>
+          <span class="corner corner-br" aria-hidden="true"></span>
+          <img src="assets/images/profile.jpg" alt="Aman Kumar Jha" width="1000" height="1337" />
+        </div>
+        <div class="hero-photo-badge"><span class="led" aria-hidden="true"></span>Open to opportunities</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue reveal" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="section-tag reveal">§ 01 — About</p>
+    <h2 class="section-title reveal">A little about my journey</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm an Electrical Engineering undergrad at <strong>NIT Silchar</strong>
+          (CGPA <span data-field="education.cgpa">8.95</span>) who fell in love with software — specifically the
+          intersection of full-stack engineering and applied AI. I enjoy
+          designing systems end-to-end: from a React interface down to the
+          retrieval pipeline that powers it.
+        </p>
+        <p>
+          Right now I'm interning at <strong>Accenture</strong> as an Advanced
+          Application Engineering Analyst, building a Retrieval-Augmented
+          Generation platform used to summarize multi-format documents at
+          scale. Outside of work, I compete in DSA and problem solving —
+          <span data-field="leetcode.questions">1020</span>+ questions on LeetCode and a <span data-field="codeforces.rank">Specialist</span> rating on Codeforces.
+        </p>
+        <p>
+          I care about shipping things that actually work: low-latency
+          real-time features, clean APIs, and interfaces people enjoy using.
+        </p>
+
+        <div class="about-cta">
+          <a href="https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">View Résumé</a>
+        </div>
+      </div>
+
+      <div class="about-side reveal">
+        <div class="stat-card">
+          <span class="stat-num" data-count="1020" data-count-field="leetcode.questions">0</span>
+          <span class="stat-label">LeetCode Questions Solved</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="1436" data-count-field="codeforces.rating">0</span>
+          <span class="stat-label">Codeforces Max Rating</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="500" data-suffix="+" data-count-field="devtinder.users">0</span>
+          <span class="stat-label">Users on DevTinder</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="99.9" data-suffix="%" data-count-field="devtinder.uptimePercent">0</span>
+          <span class="stat-label">Uptime Achieved</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education timeline -->
+    <div class="timeline reveal">
+      <h3 class="timeline-heading">Education</h3>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h4>National Institute of Technology, Silchar</h4>
+            <span class="tl-date">Jul 2023 – Jun 2027</span>
+          </div>
+          <p class="tl-sub">Bachelor of Technology, Electrical Engineering · CGPA <span data-field="education.cgpa">8.95</span></p>
+          <p class="tl-loc">Assam, India</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h4>Jawahar Navodaya Vidyalaya, Mouli Panchkula</h4>
+            <span class="tl-date">Apr 2021 – Mar 2022</span>
+          </div>
+          <p class="tl-sub">CBSE Class 12 (PCM) · 93.2%</p>
+          <p class="tl-loc">Haryana, India</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h4>Jawahar Navodaya Vidyalaya, Mouli Panchkula</h4>
+            <span class="tl-date">Apr 2019 – Mar 2020</span>
+          </div>
+          <p class="tl-sub">CBSE Class 10 · 92.2%</p>
+          <p class="tl-loc">Haryana, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <p class="section-tag reveal">§ 02 — Experience</p>
+    <h2 class="section-title reveal">Where I've worked</h2>
+
+    <div class="exp-card reveal">
+      <div class="exp-head">
+        <div>
+          <h3>Advanced Application Engineering Analyst (AEH) Intern</h3>
+          <p class="exp-company">Accenture · Bengaluru, India</p>
+        </div>
+        <div class="exp-meta">
+          <span class="exp-date">May 2026 – Jul 2026</span>
+          <a href="#" class="tag-link" id="cert-link" target="_blank" rel="noopener">View Certificate ↗</a>
+        </div>
+      </div>
+
+      <div class="exp-body">
+        <div class="exp-project-row">
+          <h4 class="exp-project">Multi-Document Summarizer (DocuMind)</h4>
+          <a href="#" class="tag-link" id="documind-link" target="_blank" rel="noopener">Source Code ↗</a>
+        </div>
+        <ul class="exp-list">
+          <li>Engineered a React / Spring Boot RAG application processing 4+ data formats (PDFs, images, text, links), scaling vector ingestion with Redis and Pinecone.</li>
+          <li>Architected an adaptive hybrid retrieval pipeline fusing the top 15 Pinecone dense and Postgres BM25 keyword results via Reciprocal Rank Fusion, and engineered backend email reminders for pending requests.</li>
+          <li><strong>Other contributions:</strong> built a 24/7 HR AI Innovation Agent using Amethyst, automated scheduling workflows with Power Apps and SharePoint, and authored a comprehensive Python-to-Java transition guide.</li>
+        </ul>
+
+        <div class="chip-row">
+          <span class="chip">React</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">Redis</span>
+          <span class="chip">Pinecone</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">RAG</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="section-tag reveal">§ 03 — Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+
+    <div class="projects-grid">
+
+      <!-- DevTinder -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Jan 2026 – Mar 2026</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-demo" target="_blank" rel="noopener" title="Demo Video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-front" target="_blank" rel="noopener" title="Frontend Repo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-back" target="_blank" rel="noopener" title="Backend Repo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-java" target="_blank" rel="noopener" title="Java Repo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">DevTinder</h3>
+        <p class="project-subtitle">Developer Matchmaking Platform</p>
+        <p class="project-desc">
+          A full-stack application facilitating developer connections through
+          interest-based matching and real-time chat, with a dual-backend
+          microservice architecture.
+        </p>
+        <ul class="project-points">
+          <li>Responsive UI backed by JWT-secured APIs supporting <span data-field="devtinder.users">500</span>+ users.</li>
+          <li>Real-time Socket.IO chat with &lt;150ms latency.</li>
+          <li>Deployed on GCP, achieving <span data-field="devtinder.uptimePercent">99.9</span>% uptime.</li>
+        </ul>
+
+        <div class="chip-row">
+          <span class="chip">React</span>
+          <span class="chip">TailwindCSS</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Socket.IO</span>
+          <span class="chip">GCP</span>
+          <span class="chip">JWT</span>
+          <span class="chip">Java</span>
+          <span class="chip">Spring Boot</span>
+        </div>
+      </article>
+
+      <!-- NETFLIX-AI -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Sep 2025 – Dec 2025</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="netflix-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="netflix-repo" target="_blank" rel="noopener" title="Source Code">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">NETFLIX-AI</h3>
+        <p class="project-subtitle">AI-Integrated Movie Recommendation App</p>
+        <p class="project-desc">
+          Front-end architecture for an AI-powered movie recommendation
+          experience, blending a fast catalogue UI with generative
+          recommendations.
+        </p>
+        <ul class="project-points">
+          <li>Responsive UI with user authentication and third-party API integrations.</li>
+          <li>Gemini AI recommendation engine responding in &lt;200ms.</li>
+        </ul>
+
+        <div class="chip-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Redux</span>
+          <span class="chip">Firebase</span>
+        </div>
+      </article>
+
+      <!-- MoodMate -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Aug 2025 – Sep 2025</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="moodmate-repo" target="_blank" rel="noopener" title="Source Code">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">MoodMate</h3>
+        <p class="project-subtitle">Smart Habit &amp; Mood Tracker</p>
+        <p class="project-desc">
+          A collaborative Java project pairing a mood/habit suggestion engine
+          with a persistent local data layer.
+        </p>
+        <ul class="project-points">
+          <li>Built a suggestion engine and data layer with local persistence, maintaining 100% of user logs.</li>
+        </ul>
+
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">OOP</span>
+          <span class="chip">Git/GitHub</span>
+        </div>
+      </article>
+
+      <!-- My-YoutTube -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Personal Project</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="youtube-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="youtube-repo" target="_blank" rel="noopener" title="Source Code">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">My-YoutTube</h3>
+        <p class="project-subtitle">Video Streaming Web App</p>
+        <p class="project-desc">
+          A YouTube-inspired video browsing experience, deployed and live.
+        </p>
+        <p class="project-todo">Description and tech stack to be added.</p>
+
+        <div class="chip-row"></div>
+      </article>
+
+      <!-- Yummy - Online Food App -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Personal Project</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="yummy-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="yummy-repo" target="_blank" rel="noopener" title="Source Code">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">Yummy</h3>
+        <p class="project-subtitle">Online Food Ordering App</p>
+        <p class="project-desc">
+          A food ordering web app for browsing menus and placing orders online.
+        </p>
+        <p class="project-todo">Description and tech stack to be added.</p>
+
+        <div class="chip-row"></div>
+      </article>
+
+      <!-- Tom & Jerry -->
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-date">Personal Project</span>
+          <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="tomjerry-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#" class="proj-icon-link" data-link-slot="tomjerry-repo" target="_blank" rel="noopener" title="Source Code">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <h3 class="project-title">Tom &amp; Jerry</h3>
+        <p class="project-subtitle">Browser Game</p>
+        <p class="project-desc">
+          A Tom &amp; Jerry-themed browser game, deployed and live.
+        </p>
+        <p class="project-todo">Description and tech stack to be added.</p>
+
+        <div class="chip-row"></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="section-tag reveal">§ 04 — Skills</p>
+    <h2 class="section-title reveal">What I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">SQL</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Frameworks &amp; Libraries</h3>
+        <div class="chip-row">
+          <span class="chip">Spring Boot</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express.js</span>
+          <span class="chip">TailwindCSS</span>
+          <span class="chip">Redux</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Tools &amp; Cloud</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">IntelliJ</span>
+          <span class="chip">GCP</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>AI &amp; Architecture</h3>
+        <div class="chip-row">
+          <span class="chip">RAG</span>
+          <span class="chip">Gemini AI</span>
+          <span class="chip">Pinecone</span>
+          <span class="chip">Redis</span>
+          <span class="chip">Reciprocal Rank Fusion</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal skill-card-wide">
+        <h3>Core Coursework</h3>
+        <div class="chip-row">
+          <span class="chip">Data Structures &amp; Algorithms</span>
+          <span class="chip">Object-Oriented Programming</span>
+          <span class="chip">Database Management Systems</span>
+          <span class="chip">Operating Systems</span>
+          <span class="chip">Computer Networks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="section" id="achievements">
+  <div class="container">
+    <p class="section-tag reveal">§ 05 — Achievements</p>
+    <h2 class="section-title reveal">Honors, awards &amp; leadership</h2>
+
+    <div class="achieve-grid">
+      <a href="https://leetcode.com/u/amanxsays/" target="_blank" rel="noopener" class="achieve-card reveal">
+        <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></span>
+        <h4>LeetCode</h4>
+        <p><span data-field="leetcode.badges">365 Day, 500 Day &amp; Knight Badge</span> · <span data-field="leetcode.rating">2063</span>+ rating · <span data-field="leetcode.questions">1020</span>+ questions solved <span class="achieve-asof">(as of <span data-field="leetcode.asOf">June 2026</span>)</span></p>
+      </a>
+      <a href="https://codeforces.com/profile/amanxsays" target="_blank" rel="noopener" class="achieve-card reveal">
+        <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+        <h4>Codeforces</h4>
+        <p>Max rating <strong data-field="codeforces.rating">1436</strong> — <span data-field="codeforces.rank">Specialist</span></p>
+      </a>
+      <a href="https://www.codechef.com/users/amanxsays" target="_blank" rel="noopener" class="achieve-card reveal">
+        <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+        <h4>CodeChef</h4>
+        <p><span data-field="codechef.stars">3</span>-star rated competitive programmer <span class="achieve-asof">(as of <span data-field="codechef.asOf">May 2026</span>)</span></p>
+      </a>
+      <div class="achieve-card reveal">
+        <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></span>
+        <h4>ECell Pitching Event</h4>
+        <p>Silver Medal Winner — Feb 2023</p>
+      </div>
+    </div>
+
+    <div class="por-grid">
+      <div class="por-card reveal">
+        <div class="por-head">
+          <h4>General Associate — ECELL NIT Silchar</h4>
+          <span class="tl-date">Aug 2024 – May 2026</span>
+        </div>
+        <ul class="exp-list">
+          <li>Spearheaded promotional campaigns and media coordination, increasing overall audience reach by 25%.</li>
+          <li>Managed stakeholder relations and hosted campus-wide events, driving high student engagement.</li>
+        </ul>
+      </div>
+
+      <div class="por-card reveal">
+        <div class="por-head">
+          <h4>Business Development Intern &amp; Campus Ambassador — TrendyDice</h4>
+          <span class="tl-date">Jun 2025 – Aug 2025</span>
+        </div>
+        <ul class="exp-list">
+          <li>Collaborated with a Dakshana alumni startup to drive B2B sales, pitching merchandise to 10+ campus clubs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="interests reveal">
+      <h3 class="timeline-heading">Beyond the Code</h3>
+      <div class="chip-row">
+        <span class="chip">Dakshana Foundation Volunteer</span>
+        <span class="chip">Exam Invigilator, JDST 2024</span>
+        <span class="chip">Led a team of 10 at E-Cell</span>
+        <span class="chip">Football</span>
+        <span class="chip">Table Tennis</span>
+        <span class="chip">Singing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <p class="section-tag reveal">§ 06 — Contact</p>
+    <h2 class="section-title reveal">Let's build something together</h2>
+    <p class="section-lead reveal">
+      Have a role, a project, or just want to talk tech and competitive
+      programming? My inbox is open.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:amanjhasahab07@gmail.com" class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          amanjhasahab07@gmail.com
+        </a>
+        <a href="tel:+919888314531" class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          +91 98883 14531
+        </a>
+        <a href="https://www.linkedin.com/in/amanxsays/" target="_blank" rel="noopener" class="contact-row">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          linkedin.com/in/amanxsays
+        </a>
+        <a href="https://github.com/amanxsays" target="_blank" rel="noopener" class="contact-row">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
+          github.com/amanxsays
+        </a>
+
+        <p class="contact-note">Based in Assam, India · Open to internships &amp; full-time SDE roles</p>
+      </div>
+
+      <form class="contact-form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Aman Kumar Jha. Built from scratch, deployed on Netlify.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/amanxsays" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/amanxsays/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://leetcode.com/u/amanxsays/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+      <a href="https://codeforces.com/profile/amanxsays" target="_blank" rel="noopener" aria-label="Codeforces">Codeforces</a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="icon-btn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/data.js"></script>
+<script src="js/links.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
