@@ -231,14 +231,14 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; margin: 0; lin
 @keyframes blink { 50% { opacity: 0; } }
 .hero-desc { font-size: 16px; color: var(--text-dim); max-width: 520px; margin: 0 0 32px; }
 .hero-actions { display: flex; gap: 12px; justify-content: flex-start; flex-wrap: wrap; margin-bottom: 34px; }
-.hero-socials { display: flex; gap: 10px; justify-content: flex-start; }
+.hero-socials { display: flex; gap: 10px; justify-content: flex-start; flex-wrap: wrap; }
 
 .social-btn {
   width: 40px; height: 40px; border-radius: var(--radius-sm); display: inline-flex; align-items: center; justify-content: center;
   background: var(--surface); border: 1px solid var(--border); color: var(--text-dim);
   transition: all 0.2s ease;
 }
-.social-btn svg { width: 18px; height: 18px; }
+.social-btn svg, .social-btn img { width: 18px; height: 18px; object-fit: contain; }
 .social-btn:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
 
 /* Photo — corner-bracket "register mark" frame instead of a gradient ring */
@@ -311,7 +311,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; margin: 0; lin
   background: var(--bg-alt); border: 2px solid var(--accent);
 }
 .tl-dot::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--accent); }
-.tl-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.tl-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.tl-heading { display: flex; align-items: center; gap: 12px; }
+.tl-logo { width: 32px; height: 32px; object-fit: contain; flex-shrink: 0; border-radius: 4px; background: var(--surface-2); padding: 3px; border: 1px solid var(--border); }
 .tl-top h4 { font-size: 16px; }
 .tl-date { font-family: var(--font-head); font-size: 12px; color: var(--text-faint); font-weight: 500; white-space: nowrap; }
 .tl-sub { margin: 6px 0 2px; color: var(--text-dim); font-size: 14px; }
@@ -320,6 +322,9 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; margin: 0; lin
 /* ---------- Experience ---------- */
 .exp-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
 .exp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px dashed var(--border); }
+.exp-head-main { display: flex; align-items: center; gap: 16px; }
+.exp-logo { width: 40px; height: 40px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); color: var(--accent); padding: 9px; }
+.exp-logo svg { width: 100%; height: 100%; }
 .exp-head h3 { font-size: 19px; margin-bottom: 6px; }
 .exp-company { margin: 0; color: var(--accent); font-weight: 600; font-size: 13.5px; font-family: var(--font-head); }
 .exp-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
@@ -357,6 +362,12 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; margin: 0; lin
 }
 .proj-icon-link svg { width: 14px; height: 14px; }
 .proj-icon-link:hover { border-color: var(--accent); color: var(--accent); }
+.project-icon {
+  width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border);
+  color: var(--accent); margin-bottom: 14px;
+}
+.project-icon svg { width: 19px; height: 19px; }
 .project-title { font-size: 19px; margin-bottom: 4px; }
 .project-subtitle { color: var(--accent); font-size: 12.5px; font-weight: 600; font-family: var(--font-head); margin: 0 0 14px; }
 .project-desc { color: var(--text-dim); font-size: 14px; margin-bottom: 14px; }
@@ -382,16 +393,23 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; margin: 0; lin
 a.achieve-card:hover { transform: translateY(-3px); border-color: var(--accent); }
 .achieve-icon { width: 26px; height: 26px; display: block; margin-bottom: 16px; color: var(--accent); }
 .achieve-icon svg { width: 100%; height: 100%; }
+.achieve-icon-img { width: 30px; height: 30px; }
+.achieve-icon-img img { width: 100%; height: 100%; object-fit: contain; }
 .achieve-card h4 { font-size: 14.5px; margin-bottom: 8px; }
 .achieve-card p { margin: 0; color: var(--text-dim); font-size: 13px; }
 .achieve-asof { color: var(--text-faint); font-size: 11.5px; }
 
-.por-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 56px; }
+.por-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 56px; }
 .por-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.por-card .achieve-icon { margin-bottom: 14px; }
 .por-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 .por-head h4 { font-size: 14.5px; max-width: 320px; }
 .por-card .exp-list { margin-bottom: 0; }
 .por-card .exp-list li { font-size: 13.5px; }
+
+@media (max-width: 1080px) {
+  .por-grid { grid-template-columns: 1fr 1fr; }
+}
 
 .interests { }
 .interests .chip-row { justify-content: flex-start; }

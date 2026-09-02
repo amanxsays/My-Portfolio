@@ -18,7 +18,7 @@ const SITE_DATA = {
 
   leetcode: {
     rating: 2063,
-    questions: 1020,
+    questions: 1060,
     badges: "365 Day, 500 Day & Knight Badge",
     asOf: "June 2026",
   },
@@ -33,8 +33,13 @@ const SITE_DATA = {
     asOf: "May 2026",
   },
 
+  atcoder: {
+    profileNote: "Competitive programming profile",
+  },
+
   devtinder: {
-    users: 500,
+    activeUsers: 25,
+    capacityUsers: 500,
     uptimePercent: "99.9",
   },
 };
