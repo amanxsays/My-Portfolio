@@ -17,10 +17,10 @@ const SITE_DATA = {
   },
 
   leetcode: {
-    rating: 2063,
+    rating: 2085,
     questions: 1060,
     badges: "365 Day, 500 Day & Knight Badge",
-    asOf: "June 2026",
+    asOf: "September 2026",
   },
 
   codeforces: {
