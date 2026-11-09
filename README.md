@@ -24,7 +24,6 @@ js/script.js         Interactivity: nav, theme toggle, reveal animations,
 js/data.js             EDIT THIS to update CGPA, ratings, question counts —
                       one change here updates every place that number shows
 js/links.js           All project/demo/certificate links in one place
-assets/AMAN_RESUME_08_11_26.pdf    Current résumé served by both Resume buttons
 assets/images/profile.jpg          Hero photo (cropped/compressed for web)
 assets/images/profile-cutout.png   Unused background-removed variant, kept
                       in case you want the cutout look again later
@@ -70,10 +69,13 @@ or API key needed. Submissions show up in Netlify → Site → Forms.
 ## Updating your résumé
 
 The "Resume" (nav bar) and "View Résumé" (About section) buttons open
-`assets/AMAN_RESUME_08_11_26.pdf`, copied from the resume supplied on
-November 9, 2026. To update it, add the new PDF to `assets/` and update
-both links in `index.html`. Use a new filename when replacing the PDF
-because deployed assets are cached for a year.
+the same Google Drive file:
+`https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view?usp=sharing`
+
+Update the PDF through Drive's "Manage versions" on this existing file
+to keep both buttons current without changing the portfolio code.
+Keep the file shared with "Anyone with the link." No local resume PDF
+is stored in this repository.
 
 ## Still to fill in
 
