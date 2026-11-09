@@ -54,7 +54,7 @@
         <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
       </button>
-      <a href="https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view?usp=sharing" class="btn btn-ghost btn-sm resume-nav-btn" target="_blank" rel="noopener">Resume</a>
+      <a href="assets/AMAN_RESUME_08_11_26.pdf" class="btn btn-ghost btn-sm resume-nav-btn" target="_blank" rel="noopener">Resume</a>
       <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -79,8 +79,8 @@
           <span id="typed"></span><span class="cursor" aria-hidden="true">|</span>
         </h2>
         <p class="hero-desc reveal">
-          B.Tech Electrical Engineering student at NIT Silchar building full-stack
-          products and Retrieval-Augmented Generation systems — most recently as
+          B.Tech Electrical Engineering student at NIT Silchar building reliable backend
+          systems, full-stack web and Android apps, and RAG platforms — most recently as
           an Advanced Application Engineering Intern (Backend Developer) at Accenture. I like
           turning complex backend problems into fast, reliable, real-world apps.
         </p>
@@ -149,13 +149,13 @@
           retrieval pipeline that powers it.
         </p>
         <p>
-          I spent this past summer at <strong>Accenture</strong> as a 2-month
-          Advanced Application Engineering Intern (Backend Developer), owning the
-          ingestion and indexing pipeline of DocuMind — a Java / Spring Boot,
+          From May to July 2026, I worked at <strong>Accenture</strong> as a 2-month
+          Advanced Application Engineering Intern (Backend Developer), owning document ingestion
+          and query orchestration for DocuMind — a Java / Spring Boot,
           Retrieval-Augmented Generation platform for multi-format document
           question-answering. Outside of work, I compete in DSA
           and problem solving —
-          <span data-field="leetcode.questions">1060</span>+ questions on LeetCode and a <span data-field="codeforces.rank">Specialist</span> rating on Codeforces.
+          <span data-field="leetcode.questions">1100</span>+ questions and a Guardian badge on LeetCode, plus a <span data-field="codeforces.rank">Specialist</span> rating on Codeforces.
         </p>
         <p>
           I care about shipping things that actually work: low-latency
@@ -163,13 +163,13 @@
         </p>
 
         <div class="about-cta">
-          <a href="https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">View Résumé</a>
+          <a href="assets/AMAN_RESUME_08_11_26.pdf" class="btn btn-primary" target="_blank" rel="noopener">View Résumé</a>
         </div>
       </div>
 
       <div class="about-side reveal">
         <div class="stat-card">
-          <span class="stat-num" data-count="1060" data-count-field="leetcode.questions">0</span>
+          <span class="stat-num" data-count="1100" data-count-field="leetcode.questions">0</span>
           <span class="stat-label">LeetCode Questions Solved</span>
         </div>
         <div class="stat-card">
@@ -177,12 +177,12 @@
           <span class="stat-label">Codeforces Max Rating</span>
         </div>
         <div class="stat-card">
-          <span class="stat-num" data-count="25" data-suffix="+" data-count-field="devtinder.activeUsers">0</span>
-          <span class="stat-label">Active Users on DevTinder</span>
+          <span class="stat-num" data-count="50" data-count-field="sluice.javaTests">0</span>
+          <span class="stat-label">Sluice Java Tests</span>
         </div>
         <div class="stat-card">
-          <span class="stat-num" data-count="99.9" data-suffix="%" data-count-field="devtinder.uptimePercent">0</span>
-          <span class="stat-label">Uptime Achieved</span>
+          <span class="stat-num" data-count="17" data-count-field="sluice.frontendTests">0</span>
+          <span class="stat-label">Sluice Frontend Tests</span>
         </div>
       </div>
     </div>
@@ -199,7 +199,7 @@
               <img class="tl-logo" src="assets/images/icons/nit-silchar.png" alt="" width="32" height="32" loading="lazy" />
               <h4>National Institute of Technology, Silchar</h4>
             </div>
-            <span class="tl-date">Jul 2023 – Jun 2027</span>
+            <span class="tl-date">Jul 2023 – Expected Jun 2027</span>
           </div>
           <p class="tl-sub">Bachelor of Technology, Electrical Engineering · CGPA <span data-field="education.cgpa">8.95</span></p>
           <p class="tl-loc">Assam, India</p>
@@ -269,9 +269,10 @@
           <a href="#" class="tag-link" id="documind-link" target="_blank" rel="noopener">Source Code ↗</a>
         </div>
         <ul class="exp-list">
-          <li>Owned the ingestion and indexing pipeline of a Java / Spring Boot document question-answering system, routing uploads across 4 source types (PDF, image, text, Wikipedia) through type-specific parsers before chunking and embedding.</li>
+          <li>Owned document ingestion and query orchestration for a Java / Spring Boot document question-answering system developed by an intern team, routing uploads across 4 source types (PDF, image, text, Wikipedia) through type-specific parsers before chunking and embedding.</li>
           <li>Parsing, embedding and indexing moved off the request path onto Redis-queued background workers.</li>
           <li>Added content-hash deduplication to skip re-embedding duplicates, plus owner-aware access control with cascading delete across session and global views.</li>
+          <li>Implemented request orchestration and a planner that converts questions and chat history into validated JSON retrieval plans; contributed to hybrid dense + keyword retrieval and cross-encoder reranking.</li>
         </ul>
 
         <div class="chip-row">
@@ -300,6 +301,9 @@
         <div class="project-top">
           <span class="project-date">Aug 2026 – Present</span>
           <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="sluice-live" target="_blank" rel="noopener" title="Live Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
             <a href="#" class="proj-icon-link" data-link-slot="sluice-repo" target="_blank" rel="noopener" title="Source Code">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.44-2.69 5.42-5.25 5.7.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.21 0 .31.21.67.8.56A10.94 10.94 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/></svg>
             </a>
@@ -308,7 +312,7 @@
 
         <span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
         <h3 class="project-title">Sluice</h3>
-        <p class="project-subtitle">Distributed Job Scheduler &amp; Durable Task Queue</p>
+        <p class="project-subtitle">Durable Job Queue &amp; Scheduler</p>
         <p class="project-desc">
           A PostgreSQL-backed durable job queue in Java / Spring Boot with
           at-least-once delivery, database-level idempotency, and
@@ -316,10 +320,11 @@
           upstream throttling.
         </p>
         <ul class="project-points">
-          <li>Concurrent job claiming via <code>SELECT FOR UPDATE SKIP LOCKED</code>, verified duplicate-free under multi-threaded load with Testcontainers.</li>
+          <li>Concurrent job claiming via <code>SELECT FOR UPDATE SKIP LOCKED</code>, verified with Testcontainers concurrency tests in a <span data-field="sluice.javaTests">50</span>-test Java suite.</li>
           <li>At-least-once delivery: time-boxed leases, worker heartbeats, a reaper for silently dead workers, exponential backoff with full jitter, and a dead letter queue past max attempts.</li>
-          <li>Database-level idempotency (<code>ON CONFLICT DO NOTHING</code>), job priorities, cron-driven recurring schedules, and a rate-limit-aware handler honouring upstream Retry-After on 429.</li>
+          <li>Database-level idempotency (<code>ON CONFLICT DO NOTHING</code>), atomic batch enqueueing, job priorities, cron-driven recurring schedules, and a rate-limit-aware handler honouring upstream Retry-After on 429.</li>
           <li>Benchmarked 1 to 8 workers against a live mock upstream: 9.2 to 44.8 jobs/sec (4.9x), p95 10.2s to 1.9s — via a one-command Docker Compose stack with Prometheus/Grafana metrics and GitHub Actions CI running Testcontainers per push.</li>
+          <li>Built a React / Vite dashboard with 7 reliability scenarios, configurable workers and queue animations; validated with <span data-field="sluice.frontendTests">17</span> frontend tests and deployed across Netlify, Render and Neon.</li>
         </ul>
 
         <div class="chip-row">
@@ -328,6 +333,8 @@
           <span class="chip">PostgreSQL</span>
           <span class="chip">JDBC</span>
           <span class="chip">Flyway</span>
+          <span class="chip">React</span>
+          <span class="chip">Vite</span>
           <span class="chip">JUnit</span>
           <span class="chip">Testcontainers</span>
           <span class="chip">Docker Compose</span>
@@ -342,6 +349,9 @@
         <div class="project-top">
           <span class="project-date">Jan 2026 – Present</span>
           <div class="project-links">
+            <a href="#" class="proj-icon-link" data-link-slot="devtinder-android" target="_blank" rel="noopener" title="Android Releases" aria-label="DevTinder Android releases">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
             <a href="#" class="proj-icon-link" data-link-slot="devtinder-demo" target="_blank" rel="noopener" title="Demo Video">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             </a>
@@ -362,22 +372,24 @@
 
         <span class="project-icon"><img src="assets/images/icons/devtinder.png" alt="" width="24" height="24" loading="lazy" /></span>
         <h3 class="project-title">DevTinder</h3>
-        <p class="project-subtitle">Developer Platform with an Agentic RAG Resume Assistant</p>
+        <p class="project-subtitle">Web &amp; Android Developer Platform with Agentic RAG</p>
         <p class="project-desc">
           A React / Redux SPA over a two-service backend: a Node.js /
           Express core API for auth, profiles and Socket.IO chat, plus a
-          Spring Boot service that answers questions over an uploaded
+          Java 25 / Spring Boot service that answers questions over an uploaded
           resume through an adaptive retrieval pipeline.
         </p>
         <ul class="project-points">
           <li>Ingestion: signed Cloudinary uploads (file bytes bypass the API), Apache Tika parsing, word-boundary chunking (1000 chars, 200 overlap), embeddings upserted to Pinecone with metadata mirrored to MongoDB.</li>
           <li>LLM router emitting a JSON execution plan (strategy, tier, retrieval mode) into an adaptive evaluator and query-rewriter loop over 3 rounds.</li>
           <li>Hybrid retrieval: Pinecone dense and MongoDB sparse fused by Reciprocal Rank Fusion (k=60), per-document chunk cap; async generation over a Redis queue, worker pool and Server-Sent Events.</li>
-          <li><span data-field="devtinder.activeUsers">25</span>+ active users onboarded, with real-time Socket.IO chat deployed on GCP at <span data-field="devtinder.uptimePercent">99.9</span>% uptime.</li>
+          <li>Authenticated Node-to-Spring AI requests with HMAC-SHA256; moved generation to Redis workers and streamed Server-Sent Events updates to keep HTTP threads free.</li>
+          <li>Released a Capacitor Android app with Java plugins for Keystore-backed encrypted sessions, read-only offline chats, speech and PDF previews.</li>
+          <li>Added Firebase Cloud Messaging notifications with a MongoDB transactional outbox, exponential backoff, lease-based recovery and duplicate-alert suppression.</li>
         </ul>
 
         <div class="chip-row">
-          <span class="chip">Java 21</span>
+          <span class="chip">Java 25</span>
           <span class="chip">Spring Boot</span>
           <span class="chip">Node.js</span>
           <span class="chip">MongoDB</span>
@@ -389,6 +401,9 @@
           <span class="chip">React</span>
           <span class="chip">Redux</span>
           <span class="chip">TailwindCSS</span>
+          <span class="chip">Capacitor</span>
+          <span class="chip">Firebase Cloud Messaging</span>
+          <span class="chip">HMAC-SHA256</span>
         </div>
       </article>
 
@@ -554,11 +569,13 @@
       </div>
 
       <div class="skill-card reveal">
-        <h3>Frontend</h3>
+        <h3>Frontend &amp; Mobile</h3>
         <div class="chip-row">
           <span class="chip">React</span>
           <span class="chip">Redux</span>
           <span class="chip">TailwindCSS</span>
+          <span class="chip">Capacitor (Android)</span>
+          <span class="chip">Firebase Cloud Messaging</span>
         </div>
       </div>
 
@@ -566,6 +583,7 @@
         <h3>Backend &amp; APIs</h3>
         <div class="chip-row">
           <span class="chip">Spring Boot</span>
+          <span class="chip">Spring Data</span>
           <span class="chip">REST APIs</span>
           <span class="chip">Node.js</span>
           <span class="chip">Express.js</span>
@@ -588,6 +606,7 @@
           <span class="chip">Pub/Sub Messaging</span>
           <span class="chip">JUnit</span>
           <span class="chip">Testcontainers</span>
+          <span class="chip">Integration Testing</span>
           <span class="chip">CI (GitHub Actions)</span>
         </div>
       </div>
@@ -623,6 +642,16 @@
         </div>
       </div>
 
+      <div class="skill-card reveal">
+        <h3>AI Coursework</h3>
+        <div class="chip-row">
+          <span class="chip">LangChain</span>
+          <span class="chip">Model Context Protocol (MCP)</span>
+          <span class="chip">Agentic Coding (Claude Code)</span>
+          <span class="chip">Spec-Driven Development</span>
+        </div>
+      </div>
+
       <div class="skill-card reveal skill-card-wide">
         <h3>Core Computer Science</h3>
         <div class="chip-row">
@@ -647,7 +676,7 @@
       <a href="https://leetcode.com/u/amanxsays/" target="_blank" rel="noopener" class="achieve-card reveal">
         <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></span>
         <h4>LeetCode</h4>
-        <p><span data-field="leetcode.badges">365 Day, 500 Day &amp; Knight Badge</span> · <span data-field="leetcode.rating">2063</span>+ rating · <span data-field="leetcode.questions">1060</span>+ questions solved <span class="achieve-asof">(as of <span data-field="leetcode.asOf">June 2026</span>)</span></p>
+        <p><span data-field="leetcode.badges">Guardian Badge</span> · <span data-field="leetcode.rating">2133</span> peak rating · <span data-field="leetcode.questions">1100</span>+ questions solved <span class="achieve-asof">(as of <span data-field="leetcode.asOf">November 2026</span>)</span></p>
       </a>
       <a href="https://codeforces.com/profile/amanxsays" target="_blank" rel="noopener" class="achieve-card reveal">
         <span class="achieve-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>

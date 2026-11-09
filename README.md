@@ -24,9 +24,7 @@ js/script.js         Interactivity: nav, theme toggle, reveal animations,
 js/data.js             EDIT THIS to update CGPA, ratings, question counts —
                       one change here updates every place that number shows
 js/links.js           All project/demo/certificate links in one place
-assets/Aman_Kumar_Jha_Resume.pdf   Local backup copy of your résumé
-                      (the site's Resume buttons link to Google Drive
-                      instead — see "Updating your résumé" below)
+assets/AMAN_RESUME_08_11_26.pdf    Current résumé served by both Resume buttons
 assets/images/profile.jpg          Hero photo (cropped/compressed for web)
 assets/images/profile-cutout.png   Unused background-removed variant, kept
                       in case you want the cutout look again later
@@ -37,11 +35,11 @@ netlify.toml          Netlify config (publish dir + security headers)
 ## Updating your stats (CGPA, ratings, question counts)
 
 Open **`js/data.js`**. Every number that changes over time — CGPA,
-LeetCode rating/questions solved/badges, Codeforces max rating, CodeChef
-stars, DevTinder's user count and uptime — lives in one `SITE_DATA` object
+LeetCode peak rating/questions solved/badges, Codeforces max rating, CodeChef
+stars, and Sluice's Java/frontend test counts — lives in one `SITE_DATA` object
 there. Change a value and it updates everywhere that number appears on the
 page (the About intro, the stat counters, the Achievements cards, the
-DevTinder project bullets) — you never need to go hunting through
+Sluice project bullets) — you never need to go hunting through
 `index.html` for where a number is hardcoded.
 
 This works because those spots in `index.html` don't contain the number
@@ -71,14 +69,11 @@ or API key needed. Submissions show up in Netlify → Site → Forms.
 
 ## Updating your résumé
 
-The "Resume" (nav bar) and "View Résumé" (About section) buttons link
-straight to your Google Drive file:
-`https://drive.google.com/file/d/10izmqnnO1ripsV3-HV6fIp4d_9Rdz8NM/view`
-
-Since it points at the Drive file ID rather than an uploaded PDF, you can
-replace/update the file in Drive at any time (keep the same file, use
-Drive's "Manage versions" / overwrite) without touching any code here.
-Just make sure the file's sharing is set to "Anyone with the link."
+The "Resume" (nav bar) and "View Résumé" (About section) buttons open
+`assets/AMAN_RESUME_08_11_26.pdf`, copied from the resume supplied on
+November 9, 2026. To update it, add the new PDF to `assets/` and update
+both links in `index.html`. Use a new filename when replacing the PDF
+because deployed assets are cached for a year.
 
 ## Still to fill in
 

@@ -17,10 +17,10 @@ const SITE_DATA = {
   },
 
   leetcode: {
-    rating: 2085,
-    questions: 1060,
-    badges: "365 Day, 500 Day & Knight Badge",
-    asOf: "September 2026",
+    rating: 2133,
+    questions: 1100,
+    badges: "Guardian Badge",
+    asOf: "November 2026",
   },
 
   codeforces: {
@@ -37,9 +37,8 @@ const SITE_DATA = {
     profileNote: "Competitive programming profile",
   },
 
-  devtinder: {
-    activeUsers: 25,
-    capacityUsers: 500,
-    uptimePercent: "99.9",
+  sluice: {
+    javaTests: 50,
+    frontendTests: 17,
   },
 };

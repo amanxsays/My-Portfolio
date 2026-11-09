@@ -5,6 +5,10 @@
 // ========================================================================
 
 const PROJECT_LINKS = {
+  // Sluice
+  "sluice-repo": "https://github.com/amanxsays/Sluice",
+  "sluice-live": "https://sluicee.netlify.app/",
+
   // Accenture — DocuMind
   certificate: "https://drive.google.com/file/d/1Jnc8_R39IQE9-z9YBD93Zl406EH4yfLe/view?usp=drivesdk",
   documind: "https://github.com/DOCU-MIND-ORG/the_documind",
@@ -15,6 +19,7 @@ const PROJECT_LINKS = {
   "devtinder-front": "https://github.com/amanxsays/dev-Tinder-frontend",
   "devtinder-back": "https://github.com/amanxsays/dev-Tinder-backend",
   "devtinder-java": "https://github.com/amanxsays/dev-Tinder-Spring-Backend",
+  "devtinder-android": "https://github.com/amanxsays/dev-Tinder-frontend/releases",
 
   // NETFLIX-AI
   "netflix-live": "https://amanmoviesite3.netlify.app/",
